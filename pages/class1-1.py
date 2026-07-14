@@ -48,3 +48,30 @@ name = "apple"
 age = 18
 print(f"Hello, my name is {name}, I'm {age} years old.")  # f-string
 # 可以將變數或其他型態的資料放到f字串裡面的{}，這樣就可以在字串中顯示
+
+print(len("apple")) #len()是一個函式，可以計算字串的長度
+print(len("，"))  #len()是一個函式，可以計算字串的長度
+# type()，可以查看變數的型態
+print(type(1)) #(class 'int')
+print(type(1.0)) #(class 'float')
+print(type("apple")) #(class 'str')
+print(type(True)) #(class 'bool')
+
+# 型態轉換
+print(int(1.0)) #將浮點數轉為整數
+print(float(1)) #將整數轉為浮點數
+print(str(1)) #將整數轉為字串
+print(bool(1)) #將整數轉為布林值
+print(int(1.234)) #將浮點數轉為整數
+print(float('1.234')) #將字串轉為浮點數
+print(str(1.0)) #將浮點數轉為字串
+print(bool(10.0)) #將浮點數轉為布林值
+# print(int('apple')) #將字串轉為整數，會報錯
+
+# 請使用者輸入半徑，計算園面積
+r=float(input("請輸入半徑:")) #input()是輸入函式，會將使用者輸入的資料轉為字串
+print(f"園的面積是: {3.14 * r ** 2}")
+
+a = float(input("請輸入國文期中成績:"))
+b = float(input("請輸入國文期末成績:"))
+print(f"國文平均成績是: {(a + b) / 2}")
